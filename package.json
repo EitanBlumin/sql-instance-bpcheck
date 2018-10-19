@@ -21,7 +21,7 @@
 						"queryFile": "./sql/query-details.sql",
 						"label": "SubCategory",
 						"value": "ObjectName"
-					}
+					},
                     "type": {
                         "table": null
                     }
