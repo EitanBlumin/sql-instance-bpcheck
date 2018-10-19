@@ -1,0 +1,32 @@
+{
+    "name": "sql-instance-bpcheck",
+    "displayName": "sql-instance-bpcheck",
+    "description": "Condensed SQL Server Checkup of most common and impactful best practices",
+    "version": "0.0.1",
+    "publisher": "EitanBlumin",
+    "engines": {
+        "vscode": "^1.28.0",
+        "sqlops": "*"
+    },
+    "categories": [
+        "Other"
+    ],
+    "contributes": {
+        "dashboard.insights": [
+            {
+                "id": "sql-instance-bpcheck.insight",
+                "contrib": {
+                    "queryFile": "./sql/query.sql",
+					"details": {
+						"queryFile": "./sql/query-details.sql",
+						"label": "SubCategory",
+						"value": "ObjectName"
+					}
+                    "type": {
+                        "table": null
+                    }
+                }
+            }
+        ]
+    }
+}
